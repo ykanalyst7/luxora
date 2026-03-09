@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Digital Marketing — Luxury Brand Growth Partner</title>
+<meta name="description" content="Luxora Digital Marketing is the premier luxury brand growth consultancy for high-end brands across the United States.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--white:#ffffff;--off-white:#faf8f5;--cream:#f5f0e8;--light-bg:#f9f6f0;--border:#e8e0d0;--border-mid:#d4c9b0;--gold:#b8912a;--gold-light:#d4a83a;--gold-dim:#c9a84c;--gold-pale:#f5edda;--charcoal:#1a1814;--body:#2e2b26;--muted:#7a7168}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--body);font-family:'EB Garamond',Georgia,serif;font-size:18px;line-height:1.75;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;letter-spacing:.02em;line-height:1.15;color:var(--charcoal)}
+.label{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 4rem;border-bottom:1px solid transparent;transition:all .5s ease;background:transparent}
+nav.scrolled{background:rgba(255,255,255,.96);border-color:var(--border);backdrop-filter:blur(14px)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;letter-spacing:.2em;color:var(--charcoal);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2.8rem;list-style:none}
+.nav-links a{font-family:'Didact Gothic',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--white);background:var(--gold);padding:.7rem 1.8rem;border:none;cursor:pointer;text-decoration:none;transition:background .3s}
+.nav-cta:hover{background:var(--charcoal)}
+section{position:relative}
+.section-inner{max-width:1240px;margin:0 auto;padding:0 4rem}
+.btn-primary{display:inline-block;font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.25em;text-transform:uppercase;color:var(--white);background:var(--gold);padding:1rem 2.8rem;border:none;cursor:pointer;text-decoration:none;transition:background .35s,transform .3s}
+.btn-primary:hover{background:var(--charcoal);transform:translateY(-1px)}
+.btn-ghost{display:inline-block;font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);background:transparent;padding:1rem 2.8rem;border:1px solid var(--gold-dim);cursor:pointer;text-decoration:none;transition:all .35s}
+.btn-ghost:hover{background:var(--gold);color:var(--white);border-color:var(--gold)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:8rem;background:radial-gradient(ellipse 70% 55% at 65% 38%,rgba(184,145,42,.07) 0%,transparent 68%),var(--off-white);overflow:hidden}
+.hero-bg-line{position:absolute;top:0;right:12%;width:1px;height:100%;background:linear-gradient(to bottom,transparent 10%,var(--border) 45%,transparent 100%)}
+.hero-eyebrow{display:flex;align-items:center;gap:1.2rem;margin-bottom:2.5rem}
+.hero-eyebrow::before{content:'';display:block;width:40px;height:1px;background:var(--gold)}
+.hero-headline{font-size:clamp(3.2rem,7.5vw,7rem);font-weight:300;color:var(--charcoal);max-width:900px;margin-bottom:2rem}
+.hero-headline em{font-style:italic;color:var(--gold)}
+.hero-sub{font-family:'Didact Gothic',sans-serif;font-size:.78rem;letter-spacing:.1em;color:var(--muted);max-width:500px;line-height:2;margin-bottom:3rem}
+.hero-actions{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:2.5rem;right:4rem;display:flex;align-items:center;gap:.8rem}
+.hero-scroll span{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);writing-mode:vertical-rl}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollLine 2s ease-in-out infinite}
+@keyframes scrollLine{0%,100%{opacity:.3;transform:scaleY(.5) translateY(-20px)}50%{opacity:1;transform:scaleY(1) translateY(0)}}
+.hero-stat-row{display:flex;gap:4rem;margin-top:5rem;padding-top:3rem;border-top:1px solid var(--border)}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:300;color:var(--gold)}
+.hero-stat-label{font-family:'Didact Gothic',sans-serif;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+
+/* MARQUEE */
+.marquee-wrap{background:var(--cream);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1rem 0;overflow:hidden}
+.marquee-track{display:flex;animation:marquee 28s linear infinite;white-space:nowrap}
+.marquee-item{font-family:'Didact Gothic',sans-serif;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:0 3rem;flex-shrink:0}
+.marquee-item.gdot::after{content:'◆';color:var(--gold);margin-left:3rem}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* VALUE */
+#value{padding:10rem 0;background:var(--white)}
+.value-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:start;margin-top:5rem}
+.value-left h2{font-size:clamp(2.4rem,4vw,3.6rem);color:var(--charcoal);margin-top:1.5rem}
+.value-left h2 em{color:var(--gold);font-style:italic}
+.value-right p{color:var(--muted);font-size:1.05rem;line-height:1.9;margin-bottom:1.5rem}
+.value-pillars{margin-top:3rem;display:flex;flex-direction:column}
+.pillar{display:flex;align-items:flex-start;gap:1.8rem;padding:1.8rem 0;border-bottom:1px solid var(--border)}
+.pillar:first-child{border-top:1px solid var(--border)}
+.pillar-num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold-dim);flex-shrink:0;margin-top:.1rem}
+.pillar-text h4{font-family:'Didact Gothic',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--charcoal);margin-bottom:.4rem;font-weight:400}
+.pillar-text p{font-size:.95rem;color:var(--muted);line-height:1.75;margin:0}
+
+/* FRAMEWORK */
+#framework{padding:10rem 0;background:var(--light-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.framework-header{text-align:center}
+.framework-header h2{font-size:clamp(2.4rem,5vw,4.2rem);color:var(--charcoal);margin-top:1.5rem}
+.framework-header h2 em{color:var(--gold);font-style:italic}
+.framework-header p{color:var(--muted);font-size:1rem;max-width:540px;margin:1.5rem auto 0;line-height:1.9}
+.framework-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:6rem;border:1px solid var(--border);background:var(--border)}
+.fstep{background:var(--white);padding:3rem 2.2rem;position:relative;overflow:hidden;transition:background .4s}
+.fstep:hover{background:var(--gold-pale)}
+.fstep-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--border-mid);line-height:1;margin-bottom:1.5rem}
+.fstep-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--charcoal);margin-bottom:.8rem}
+.fstep-body{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.04em;color:var(--muted);line-height:1.85}
+.fstep-bar{position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .5s ease}
+.fstep:hover .fstep-bar{width:100%}
+
+/* INDUSTRIES */
+#industries{padding:10rem 0;background:var(--white)}
+.industries-header{max-width:700px}
+.industries-header h2{font-size:clamp(2.4rem,4vw,3.6rem);color:var(--charcoal);margin-top:1.5rem}
+.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:5rem;background:var(--border)}
+.industry-card{background:var(--white);padding:3rem 2.5rem;position:relative;overflow:hidden;transition:background .4s}
+.industry-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .5s ease}
+.industry-card:hover{background:var(--gold-pale)}
+.industry-card:hover::before{transform:scaleX(1)}
+.industry-icon{font-size:1.4rem;color:var(--gold);margin-bottom:1.5rem;display:block;opacity:.7}
+.industry-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--charcoal);margin-bottom:.8rem;font-weight:400}
+.industry-card p{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.04em;color:var(--muted);line-height:1.85}
+
+/* SERVICES */
+#services{padding:10rem 0;background:var(--light-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.services-header{text-align:center;margin-bottom:5rem}
+.services-header h2{font-size:clamp(2.4rem,5vw,4.2rem);color:var(--charcoal);margin-top:1.5rem}
+.services-header p{color:var(--muted);max-width:580px;margin:1.5rem auto 0;line-height:1.9}
+.services-list{display:flex;flex-direction:column}
+.service-row{display:grid;grid-template-columns:80px 1fr 1fr;gap:3rem;padding:3.5rem 0;border-bottom:1px solid var(--border);align-items:start;transition:background .3s}
+.service-row:first-child{border-top:1px solid var(--border)}
+.service-row:hover{background:rgba(184,145,42,.03)}
+.service-row-num{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-dim);padding-top:.2rem}
+.service-row-title h3{font-size:1.65rem;color:var(--charcoal);font-weight:300;margin-bottom:.5rem}
+.service-row-title .label{margin-top:.5rem}
+.service-row-body{font-family:'Didact Gothic',sans-serif;font-size:.66rem;letter-spacing:.04em;color:var(--muted);line-height:1.9}
+.service-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.tag{font-family:'Didact Gothic',sans-serif;font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border-mid);padding:.3rem .8rem;background:var(--white)}
+
+/* CASES */
+#cases{padding:10rem 0;background:var(--white)}
+.cases-header{margin-bottom:5rem}
+.cases-header h2{font-size:clamp(2.4rem,5vw,4.2rem);color:var(--charcoal);margin-top:1.5rem;max-width:700px}
+.cases-header h2 em{color:var(--gold);font-style:italic}
+.cases-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.case-card{background:var(--white);padding:4rem;position:relative;overflow:hidden;transition:background .4s}
+.case-card:hover{background:var(--off-white)}
+.case-industry{font-family:'Didact Gothic',sans-serif;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem}
+.case-card h3{font-size:1.75rem;color:var(--charcoal);font-weight:300;margin-bottom:1rem;line-height:1.2}
+.case-challenge{font-family:'Didact Gothic',sans-serif;font-size:.66rem;color:var(--muted);line-height:1.9;margin-bottom:2.5rem}
+.case-metrics{display:flex;gap:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)}
+.metric-val{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);display:block;line-height:1}
+.metric-label{font-family:'Didact Gothic',sans-serif;font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.3rem;display:block}
+
+/* ENGAGEMENT */
+#engagement{padding:10rem 0;background:var(--light-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.engagement-header{text-align:center;margin-bottom:5rem}
+.engagement-header h2{font-size:clamp(2.4rem,5vw,4.2rem);color:var(--charcoal);margin-top:1.5rem}
+.engagement-header p{color:var(--muted);max-width:540px;margin:1.5rem auto 0;line-height:1.9}
+.engagement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.eng-card{background:var(--white);padding:4rem 3rem;display:flex;flex-direction:column;position:relative}
+.eng-card.featured{background:var(--charcoal);border-top:2px solid var(--gold)}
+.eng-card.featured .eng-tier{color:var(--white)}
+.eng-card.featured .eng-ideal{color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.1)}
+.eng-card.featured .eng-includes li{color:rgba(255,255,255,.7)}
+.eng-card.featured .eng-tagline{color:var(--gold-light)}
+.eng-card.featured .eng-includes li::before{color:var(--gold-light)}
+.eng-tier{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--charcoal);margin-bottom:.5rem}
+.eng-tagline{font-family:'Didact Gothic',sans-serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem}
+.eng-ideal{font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border)}
+.eng-includes{list-style:none;display:flex;flex-direction:column;gap:1rem;flex:1;margin-bottom:3rem}
+.eng-includes li{font-family:'Didact Gothic',sans-serif;font-size:.66rem;letter-spacing:.04em;color:var(--muted);display:flex;align-items:flex-start;gap:1rem}
+.eng-includes li::before{content:'◆';color:var(--gold-dim);flex-shrink:0;font-size:.45rem;margin-top:.25rem}
+.eng-cta{margin-top:auto}
+.featured-badge{position:absolute;top:0;right:2.5rem;font-family:'Didact Gothic',sans-serif;font-size:.53rem;letter-spacing:.2em;text-transform:uppercase;background:var(--gold);color:var(--white);padding:.3rem .9rem}
+
+/* ABOUT */
+#about{padding:10rem 0;background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:start}
+.about-left h2{font-size:clamp(2.4rem,4vw,3.6rem);color:var(--charcoal);margin-top:1.5rem}
+.about-left h2 em{color:var(--gold);font-style:italic}
+.about-left p{color:var(--muted);margin-top:2rem;line-height:1.9;font-size:1.05rem}
+.philosophy-blocks{margin-top:4rem;display:flex;flex-direction:column}
+.philosophy-block{padding:2.5rem 0;border-bottom:1px solid var(--border)}
+.philosophy-block:first-child{border-top:1px solid var(--border)}
+.philosophy-block h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--charcoal);margin-bottom:.7rem;font-weight:400}
+.philosophy-block p{font-family:'Didact Gothic',sans-serif;font-size:.66rem;letter-spacing:.04em;color:var(--muted);line-height:1.9}
+.about-right{padding-top:4rem}
+.about-quote{font-family:'Cormorant Garamond',serif;font-size:2rem;font-style:italic;color:var(--charcoal);line-height:1.45;margin-bottom:2.5rem}
+.about-quote span{color:var(--gold)}
+.about-founder{display:flex;align-items:center;gap:1.5rem;padding:2rem;border:1px solid var(--border);margin-bottom:3rem;background:var(--off-white)}
+.founder-avatar{width:58px;height:58px;background:linear-gradient(135deg,var(--gold-pale),var(--border));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);flex-shrink:0}
+.founder-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--charcoal)}
+.founder-title{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+.differentiators{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.diff-item{padding:1.8rem;background:var(--white);transition:background .3s}
+.diff-item:hover{background:var(--gold-pale)}
+.diff-item h5{font-family:'Didact Gothic',sans-serif;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;font-weight:400}
+.diff-item p{font-family:'Didact Gothic',sans-serif;font-size:.63rem;color:var(--muted);line-height:1.8}
+
+/* CTA */
+#cta-band{padding:8rem 0;background:var(--charcoal);text-align:center;position:relative;overflow:hidden}
+#cta-band::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:350px;background:radial-gradient(ellipse,rgba(184,145,42,.12),transparent 70%);pointer-events:none}
+#cta-band .label{color:var(--gold-dim)}
+#cta-band h2{font-size:clamp(2.4rem,5vw,4.8rem);color:var(--white);max-width:800px;margin:1.5rem auto 2rem}
+#cta-band h2 em{color:var(--gold);font-style:italic}
+#cta-band p{color:rgba(255,255,255,.55);max-width:480px;margin:0 auto 3.5rem;font-family:'Didact Gothic',sans-serif;font-size:.72rem;letter-spacing:.06em;line-height:1.95}
+
+/* CONTACT */
+#contact{padding:10rem 0;background:var(--off-white);border-top:1px solid var(--border)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:8rem}
+.contact-left h2{font-size:clamp(2.4rem,4vw,3.6rem);color:var(--charcoal);margin-top:1.5rem}
+.contact-left p{color:var(--muted);margin-top:1.5rem;line-height:1.9;font-size:1rem}
+.contact-info{margin-top:3.5rem;display:flex;flex-direction:column}
+.contact-info-item{padding:1.5rem 0;border-bottom:1px solid var(--border)}
+.contact-info-item:first-child{border-top:1px solid var(--border)}
+.contact-info-label{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem}
+.contact-info-val{font-family:'EB Garamond',serif;font-size:1.05rem;color:var(--charcoal)}
+.luxury-form{display:flex;flex-direction:column;gap:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.form-group{display:flex;flex-direction:column;gap:.6rem}
+.form-group label{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.form-group input,.form-group select,.form-group textarea{background:var(--white);border:1px solid var(--border-mid);color:var(--charcoal);padding:1rem 1.2rem;font-family:'EB Garamond',serif;font-size:1rem;outline:none;transition:border-color .3s;-webkit-appearance:none;appearance:none;width:100%}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0l6 8 6-8z' fill='%23b8912a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;background-color:var(--white)}
+.form-group select option{background:var(--white);color:var(--charcoal)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#b0a898;font-size:.9rem}
+.form-submit{margin-top:.5rem}
+.form-submit .btn-primary{width:100%;text-align:center;padding:1.2rem;font-size:.63rem;letter-spacing:.28em}
+.form-note{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.1em;color:var(--muted);text-align:center;margin-top:.5rem}
+.form-success{display:none;text-align:center;padding:5rem 2rem}
+.form-success h3{font-size:2rem;color:var(--gold);margin-bottom:1rem}
+.form-success p{font-family:'Didact Gothic',sans-serif;font-size:.72rem;color:var(--muted);letter-spacing:.06em;line-height:1.9}
+
+/* FOOTER */
+footer{background:var(--charcoal);padding:5rem 0 3rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;margin-bottom:4rem;padding-bottom:4rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand .logo{font-size:1.3rem;display:block;margin-bottom:1rem;color:var(--white)}
+.footer-brand .logo span{color:var(--gold)}
+.footer-brand p{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.05em;color:rgba(255,255,255,.4);line-height:1.85;max-width:280px}
+.footer-col h5{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;font-weight:400}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+.footer-links a{font-family:'Didact Gothic',sans-serif;font-size:.63rem;letter-spacing:.06em;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.1em;color:rgba(255,255,255,.3)}
+.footer-legal{display:flex;gap:2rem;list-style:none}
+.footer-legal a{font-family:'Didact Gothic',sans-serif;font-size:.58rem;letter-spacing:.1em;color:rgba(255,255,255,.3);text-decoration:none;transition:color .3s}
+.footer-legal a:hover{color:var(--gold)}
+
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-delay-1{transition-delay:.1s}.fade-delay-2{transition-delay:.2s}.fade-delay-3{transition-delay:.3s}.fade-delay-4{transition-delay:.4s}
+
+@media(max-width:900px){
+  nav{padding:1.2rem 1.5rem}
+  .nav-links,.nav-cta{display:none}
+  .section-inner{padding:0 1.5rem}
+  .hero-stat-row{gap:2rem;flex-wrap:wrap}
+  .value-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .framework-steps{grid-template-columns:1fr 1fr}
+  .industries-grid{grid-template-columns:1fr 1fr}
+  .cases-grid{grid-template-columns:1fr}
+  .engagement-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .form-row{grid-template-columns:1fr}
+  .service-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#hero" class="logo">LUXO<span>R</span>A</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Case Studies</a></li>
+    <li><a href="#engagement">Engagement</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Private Consultation</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-line"></div>
+  <div class="section-inner">
+    <div class="hero-eyebrow"><span class="label">Luxury Brand Growth Partner — USA</span></div>
+    <h1 class="hero-headline">Where <em>Luxury Brands</em><br>Engineer Predictable<br>Revenue Growth</h1>
+    <p class="hero-sub">Luxora designs full-spectrum digital growth ecosystems for the world's most discerning brands, delivering measurable results while honoring everything you have built.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Schedule a Private Consultation</a>
+      <a href="#cases" class="btn-ghost">View Case Studies</a>
+    </div>
+    <div class="hero-stat-row">
+      <div><div class="hero-stat-num">$2.4B+</div><div class="hero-stat-label">Revenue Generated for Clients</div></div>
+      <div><div class="hero-stat-num">340%</div><div class="hero-stat-label">Average Client Revenue Growth</div></div>
+      <div><div class="hero-stat-num">120+</div><div class="hero-stat-label">Luxury Brand Partnerships</div></div>
+      <div><div class="hero-stat-num">98%</div><div class="hero-stat-label">Client Retention Rate</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item gdot">Luxury Fashion</span><span class="marquee-item gdot">Fine Hospitality</span><span class="marquee-item gdot">Private Real Estate</span><span class="marquee-item gdot">Prestige Beauty</span><span class="marquee-item gdot">Fine Dining</span><span class="marquee-item gdot">Premium Wellness</span><span class="marquee-item gdot">Luxury Automotive</span><span class="marquee-item gdot">Private Healthcare</span><span class="marquee-item gdot">Luxury Fashion</span><span class="marquee-item gdot">Fine Hospitality</span><span class="marquee-item gdot">Private Real Estate</span><span class="marquee-item gdot">Prestige Beauty</span><span class="marquee-item gdot">Fine Dining</span><span class="marquee-item gdot">Premium Wellness</span><span class="marquee-item gdot">Luxury Automotive</span><span class="marquee-item gdot">Private Healthcare</span>
+  </div>
+</div>
+
+<section id="value">
+  <div class="section-inner">
+    <div class="value-grid">
+      <div class="value-left fade-up">
+        <span class="label">Our Distinction</span>
+        <h2>Beyond a Marketing Agency.<br>A <em>Growth Architecture</em><br>Firm.</h2>
+      </div>
+      <div class="value-right fade-up fade-delay-2">
+        <p>Luxora was built on one conviction: luxury brands require a fundamentally different growth philosophy. Prestige must be honored through every stage of growth. Acquisition must amplify authority. Growth must compound brand equity at every turn.</p>
+        <p>We architect comprehensive digital growth ecosystems that operate across every touchpoint of your customer's journey, from first awareness to lifetime loyalty. The result is sustainable, predictable revenue growth that elevates your brand's position in the market.</p>
+        <div class="value-pillars">
+          <div class="pillar"><span class="pillar-num">01</span><div class="pillar-text"><h4>Systems Over Tactics</h4><p>We build interconnected growth infrastructure that scales with your brand over time, generating compounding returns across every channel you inhabit.</p></div></div>
+          <div class="pillar"><span class="pillar-num">02</span><div class="pillar-text"><h4>Luxury Brand Intelligence</h4><p>Deep understanding of the psychology, expectations, and decision cycles of ultra-high-net-worth consumers who demand the exceptional.</p></div></div>
+          <div class="pillar"><span class="pillar-num">03</span><div class="pillar-text"><h4>Revenue-First Design</h4><p>Every strategy, platform, and creative decision is engineered to generate qualified leads and measurable revenue you can count on.</p></div></div>
+          <div class="pillar"><span class="pillar-num">04</span><div class="pillar-text"><h4>Prestige Preservation</h4><p>Growth that honors your brand equity is growth that lasts. We protect what you have built while expanding where you are destined to go.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="framework">
+  <div class="section-inner">
+    <div class="framework-header fade-up">
+      <span class="label">The Luxora Method</span>
+      <h2>The <em>Luxora Growth</em><br>Framework</h2>
+      <p>A proprietary five-phase system designed exclusively for luxury brands that demand precision, discretion, and compounding results at every stage.</p>
+    </div>
+    <div class="framework-steps">
+      <div class="fstep fade-up"><div class="fstep-num">01</div><div class="fstep-title">Brand Intelligence Audit</div><div class="fstep-body">Deep analysis of your market position, competitive landscape, audience psychology, and untapped revenue opportunities awaiting activation.</div><div class="fstep-bar"></div></div>
+      <div class="fstep fade-up fade-delay-1"><div class="fstep-num">02</div><div class="fstep-title">Growth Architecture Design</div><div class="fstep-body">Engineering a bespoke digital ecosystem of channels, funnels, automation, and content built entirely around your brand's unique positioning.</div><div class="fstep-bar"></div></div>
+      <div class="fstep fade-up fade-delay-2"><div class="fstep-num">03</div><div class="fstep-title">Acquisition System Deployment</div><div class="fstep-body">Precision-targeted customer acquisition campaigns that attract ideal clients while preserving every dimension of your brand's prestige.</div><div class="fstep-bar"></div></div>
+      <div class="fstep fade-up fade-delay-3"><div class="fstep-num">04</div><div class="fstep-title">Conversion Infrastructure</div><div class="fstep-body">High-conversion digital experiences from landing pages to client portals that reflect your brand's caliber at every touchpoint along the journey.</div><div class="fstep-bar"></div></div>
+      <div class="fstep fade-up fade-delay-4"><div class="fstep-num">05</div><div class="fstep-title">Optimize and Scale</div><div class="fstep-body">Continuous data analysis, testing, and refinement to compound your growth trajectory and defend your dominant market position over time.</div><div class="fstep-bar"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="industries">
+  <div class="section-inner">
+    <div class="industries-header fade-up">
+      <span class="label">Sectors We Serve</span>
+      <h2>Built for the World's<br>Most Prestigious Brands</h2>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card fade-up"><span class="industry-icon">◈</span><h3>Luxury Fashion and Apparel</h3><p>Growth strategies that honor heritage and craftsmanship while expanding digital revenue and international market reach.</p></div>
+      <div class="industry-card fade-up fade-delay-1"><span class="industry-icon">◈</span><h3>Fine Hospitality and Travel</h3><p>Reservation-driving ecosystems for five-star hotels, private members clubs, and ultra-luxury travel experiences.</p></div>
+      <div class="industry-card fade-up fade-delay-2"><span class="industry-icon">◈</span><h3>Luxury Real Estate</h3><p>Qualified buyer acquisition for premier residential developments, private estates, and luxury commercial properties.</p></div>
+      <div class="industry-card fade-up fade-delay-3"><span class="industry-icon">◈</span><h3>Fine Dining and Culinary</h3><p>Reservation optimization, private event growth, and premium positioning for Michelin-caliber dining establishments.</p></div>
+      <div class="industry-card fade-up"><span class="industry-icon">◈</span><h3>Private Healthcare and Wellness</h3><p>Discreet, high-converting patient acquisition for concierge medicine, aesthetic clinics, and luxury wellness retreats.</p></div>
+      <div class="industry-card fade-up fade-delay-1"><span class="industry-icon">◈</span><h3>Prestige Beauty</h3><p>Building dominant digital authority for luxury skincare, cosmetics, and beauty brands in a competitive global market.</p></div>
+      <div class="industry-card fade-up fade-delay-2"><span class="industry-icon">◈</span><h3>Luxury Automotive</h3><p>Lead generation and buyer journey optimization for exotic dealers, custom builders, and premium automotive brands.</p></div>
+      <div class="industry-card fade-up fade-delay-3"><span class="industry-icon">◈</span><h3>High-End Lifestyle Brands</h3><p>Full growth systems for premium home furnishings, private aviation, luxury yachting, and bespoke lifestyle services.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header fade-up">
+      <span class="label">Our Capabilities</span>
+      <h2>Outcome-Based Growth Systems</h2>
+      <p>We design comprehensive growth ecosystems, each engineered around a measurable revenue objective and the full ambition of your brand.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-row fade-up">
+        <div class="service-row-num">01</div>
+        <div class="service-row-title"><h3>Luxury Brand Positioning</h3><span class="label">Authority Architecture</span></div>
+        <div class="service-row-body"><p>We establish and fortify your brand's position as the definitive authority in your category. From competitive differentiation strategy to prestige narrative development, we ensure your brand commands the premium it deserves in every digital environment it occupies.</p><div class="service-tags"><span class="tag">Category Authority</span><span class="tag">Narrative Strategy</span><span class="tag">Competitive Positioning</span><span class="tag">Prestige Architecture</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">02</div>
+        <div class="service-row-title"><h3>Customer Acquisition Systems</h3><span class="label">Precision Growth</span></div>
+        <div class="service-row-body"><p>Multi-channel acquisition ecosystems that attract qualified, high-intent prospects who match your ideal client profile precisely. We identify, target, and engage affluent audiences with the precision required to protect your brand's exclusivity while driving consistent revenue growth.</p><div class="service-tags"><span class="tag">Affluent Audience Targeting</span><span class="tag">Omnichannel Strategy</span><span class="tag">Lead Quality Systems</span><span class="tag">Qualified Pipeline</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">03</div>
+        <div class="service-row-title"><h3>Conversion Architecture</h3><span class="label">Revenue Engineering</span></div>
+        <div class="service-row-body"><p>We design the complete conversion journey from first interaction to closed transaction, ensuring every touchpoint reflects your brand's prestige and removes friction from the path to purchase. Our conversion systems consistently outperform industry benchmarks by three to five times.</p><div class="service-tags"><span class="tag">Funnel Design</span><span class="tag">Buyer Journey Mapping</span><span class="tag">CRO Strategy</span><span class="tag">Sales Infrastructure</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">04</div>
+        <div class="service-row-title"><h3>Luxury Website Experiences</h3><span class="label">Digital Flagship Design</span></div>
+        <div class="service-row-body"><p>Your digital presence must embody the same caliber as your physical brand. We design and build immersive, conversion-optimized website experiences that communicate luxury at every scroll while driving measurable business outcomes your team can rely on.</p><div class="service-tags"><span class="tag">Luxury UI/UX</span><span class="tag">Editorial Web Design</span><span class="tag">Performance Engineering</span><span class="tag">Mobile Excellence</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">05</div>
+        <div class="service-row-title"><h3>Revenue Growth Infrastructure</h3><span class="label">Scalable Systems</span></div>
+        <div class="service-row-body"><p>The underlying technology and data infrastructure that powers sustainable growth. CRM architecture, analytics frameworks, attribution modeling, and revenue reporting systems that provide complete visibility into your growth performance at every level.</p><div class="service-tags"><span class="tag">CRM Architecture</span><span class="tag">Analytics and Attribution</span><span class="tag">Revenue Reporting</span><span class="tag">Data Strategy</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">06</div>
+        <div class="service-row-title"><h3>Marketing Automation Ecosystems</h3><span class="label">Intelligent Nurture</span></div>
+        <div class="service-row-body"><p>Sophisticated automation architectures that nurture prospects, reactivate dormant clients, and drive repeat purchase at the level of personalization that luxury consumers expect. We deploy and manage enterprise-grade automation platforms calibrated for your brand's voice and values.</p><div class="service-tags"><span class="tag">Email Architecture</span><span class="tag">Lifecycle Automation</span><span class="tag">Personalization Engine</span><span class="tag">Retention Systems</span></div></div>
+      </div>
+      <div class="service-row fade-up">
+        <div class="service-row-num">07</div>
+        <div class="service-row-title"><h3>Market Expansion Strategy</h3><span class="label">Geographic and Segment Growth</span></div>
+        <div class="service-row-body"><p>Strategic roadmaps and execution frameworks for expanding into new markets, demographics, or geographies while preserving the brand equity you have built with care. We identify high-value expansion opportunities and build the systems to capture them with precision and confidence.</p><div class="service-tags"><span class="tag">Market Entry Strategy</span><span class="tag">Segment Expansion</span><span class="tag">Geographic Targeting</span><span class="tag">New Audience Development</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="section-inner">
+    <div class="cases-header fade-up">
+      <span class="label">Proven Results</span>
+      <h2>Growth That Speaks<br>for <em>Itself</em></h2>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card fade-up">
+        <div class="case-industry">Luxury Residential Real Estate · New York</div>
+        <h3>From Market Noise to Category Authority</h3>
+        <p class="case-challenge">A Manhattan luxury real estate developer was struggling to differentiate their ultra-high-end residential portfolio in an oversaturated digital landscape. Despite exceptional properties, their digital presence failed to reflect the caliber of their product, resulting in under-qualified leads and extended sales cycles.</p>
+        <p class="case-challenge" style="margin-top:.8rem"><strong style="color:var(--charcoal);font-weight:500">Strategy:</strong> We rebuilt their complete digital ecosystem from brand positioning and website experience to a targeted acquisition system reaching UHNW buyers across digital and programmatic channels. A fully automated lead nurture sequence was integrated with their CRM to maximize every inquiry received.</p>
+        <div class="case-metrics">
+          <div><span class="metric-val">412%</span><span class="metric-label">Qualified Lead Increase</span></div>
+          <div><span class="metric-val">$280M</span><span class="metric-label">Pipeline Generated</span></div>
+          <div><span class="metric-val">47%</span><span class="metric-label">Reduction in Sales Cycle</span></div>
+        </div>
+      </div>
+      <div class="case-card fade-up fade-delay-1">
+        <div class="case-industry">Fine Dining and Hospitality · Los Angeles</div>
+        <h3>Transforming Reservations Into Revenue Systems</h3>
+        <p class="case-challenge">A Michelin-recognized fine dining group across three Los Angeles locations was experiencing inconsistent reservation volume and declining private event bookings. Their digital presence was generic and completely misaligned with the exceptional experience they delivered every evening.</p>
+        <p class="case-challenge" style="margin-top:.8rem"><strong style="color:var(--charcoal);font-weight:500">Strategy:</strong> A full brand positioning overhaul, editorial website redesign, and reservation conversion architecture. We implemented a private events acquisition funnel targeting corporate clients and high-net-worth individuals through precision digital channels built for sustained performance.</p>
+        <div class="case-metrics">
+          <div><span class="metric-val">290%</span><span class="metric-label">Private Event Revenue Growth</span></div>
+          <div><span class="metric-val">$4.2M</span><span class="metric-label">Additional Annual Revenue</span></div>
+          <div><span class="metric-val">3.8x</span><span class="metric-label">Return on Investment</span></div>
+        </div>
+      </div>
+      <div class="case-card fade-up">
+        <div class="case-industry">Private Medical Aesthetics · Miami and Chicago</div>
+        <h3>Building a Premium Patient Acquisition Engine</h3>
+        <p class="case-challenge">A luxury aesthetic medicine clinic group with locations in Miami and Chicago was relying heavily on referrals. They had aggressive expansion goals yet lacked a scalable digital acquisition system, and every previous marketing attempt had attracted the wrong patient profile entirely.</p>
+        <p class="case-challenge" style="margin-top:.8rem"><strong style="color:var(--charcoal);font-weight:500">Strategy:</strong> We designed a discreet, high-converting patient acquisition ecosystem leveraging intent-based digital targeting, a conversion-optimized consultation funnel, and a comprehensive CRM automation system to manage the patient journey from inquiry to lifetime value.</p>
+        <div class="case-metrics">
+          <div><span class="metric-val">360%</span><span class="metric-label">New Patient Acquisition Growth</span></div>
+          <div><span class="metric-val">78%</span><span class="metric-label">Reduction in CPL</span></div>
+          <div><span class="metric-val">$6.8M</span><span class="metric-label">Revenue Growth in 18 Months</span></div>
+        </div>
+      </div>
+      <div class="case-card fade-up fade-delay-1">
+        <div class="case-industry">Prestige Skincare Brand · National DTC</div>
+        <h3>Scaling a $40M Brand to National Category Leader</h3>
+        <p class="case-challenge">A prestige skincare brand with strong product-market fit and an existing $40M revenue base sought to scale to $100M and beyond while defending their luxury positioning against mass-market competitors encroaching on their category with growing intensity.</p>
+        <p class="case-challenge" style="margin-top:.8rem"><strong style="color:var(--charcoal);font-weight:500">Strategy:</strong> Market dominance architecture including audience expansion strategy, premium content ecosystem, performance acquisition infrastructure, and a retention automation system. We repositioned them as the definitive authority in results-driven luxury skincare across the United States.</p>
+        <div class="case-metrics">
+          <div><span class="metric-val">167%</span><span class="metric-label">Revenue Growth in 24 Months</span></div>
+          <div><span class="metric-val">$107M</span><span class="metric-label">Revenue Achieved</span></div>
+          <div><span class="metric-val">52%</span><span class="metric-label">Repeat Purchase Rate Increase</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="engagement">
+  <div class="section-inner">
+    <div class="engagement-header fade-up">
+      <span class="label">Engagement Models</span>
+      <h2>Designed for Ambition</h2>
+      <p>Three consulting engagement tiers, each designed to meet luxury brands at a precise stage of their growth journey with full strategic support.</p>
+    </div>
+    <div class="engagement-grid">
+      <div class="eng-card fade-up">
+        <div class="eng-tier">Growth Foundation</div>
+        <div class="eng-tagline">For Emerging Luxury Brands</div>
+        <p class="eng-ideal">Designed for luxury brands generating $1M to $10M in annual revenue seeking to build the foundational digital infrastructure required to scale with intention and precision.</p>
+        <ul class="eng-includes">
+          <li>Brand Positioning Strategy</li>
+          <li>Digital Presence Audit and Roadmap</li>
+          <li>Primary Acquisition Channel Build</li>
+          <li>Conversion Funnel Architecture</li>
+          <li>CRM Setup and Automation Foundation</li>
+          <li>Monthly Strategy and Performance Reviews</li>
+          <li>Dedicated Growth Strategist</li>
+        </ul>
+        <div class="eng-cta"><a href="#contact" class="btn-ghost">Request Consultation</a></div>
+      </div>
+      <div class="eng-card featured fade-up fade-delay-1">
+        <div class="featured-badge">Most Engaged</div>
+        <div class="eng-tier">Growth Accelerator</div>
+        <div class="eng-tagline">For Scaling Luxury Brands</div>
+        <p class="eng-ideal">Built for established luxury brands at $10M to $50M in revenue ready to build a full-spectrum growth ecosystem and compound their market position across every channel they inhabit.</p>
+        <ul class="eng-includes">
+          <li>Full Growth Architecture Design</li>
+          <li>Multi-Channel Acquisition System</li>
+          <li>Luxury Website Experience Build</li>
+          <li>Complete Conversion Infrastructure</li>
+          <li>Advanced Marketing Automation</li>
+          <li>Revenue Analytics and Attribution</li>
+          <li>Bi-Weekly Executive Strategy Sessions</li>
+          <li>Dedicated Senior Strategy Team</li>
+          <li>Priority Access and Response</li>
+        </ul>
+        <div class="eng-cta"><a href="#contact" class="btn-primary">Request Consultation</a></div>
+      </div>
+      <div class="eng-card fade-up fade-delay-2">
+        <div class="eng-tier">Market Dominance</div>
+        <div class="eng-tagline">For Category Leaders</div>
+        <p class="eng-ideal">Reserved for luxury brands at $50M and above or private equity-backed portfolios with category leadership ambitions. A full partnership with Luxora's most senior consultants, designed to redefine your market on your terms.</p>
+        <ul class="eng-includes">
+          <li>C-Suite Growth Strategy Partnership</li>
+          <li>Complete Digital Ecosystem Build and Management</li>
+          <li>Market Expansion Strategy and Execution</li>
+          <li>Competitive Intelligence Program</li>
+          <li>Custom Technology Infrastructure</li>
+          <li>Enterprise CRM and Revenue Operations</li>
+          <li>Dedicated Executive Consultant Access</li>
+          <li>Weekly Strategy Leadership Sessions</li>
+          <li>Quarterly Board Reporting</li>
+        </ul>
+        <div class="eng-cta"><a href="#contact" class="btn-ghost">Request Consultation</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-left fade-up">
+        <span class="label">Our Philosophy</span>
+        <h2>Growth That<br>Honors <em>Prestige</em></h2>
+        <p>Luxora was founded on a single conviction: luxury brands have been underserved by the marketing industry for far too long. Traditional agencies apply mass-market tactics to premium brands, commoditizing what should be protected and celebrated at every touchpoint.</p>
+        <p>We operate at the intersection of luxury brand strategy, digital infrastructure, and data-driven growth systems. Our team brings together senior consultants with deep backgrounds in luxury brand management, enterprise technology, and performance marketing across the United States.</p>
+        <div class="philosophy-blocks">
+          <div class="philosophy-block"><h4>Luxury Demands a Different Approach</h4><p>Luxury consumers respond to authority, aspiration, and trust. Our methodologies are built around the psychology and decision patterns of affluent and ultra-high-net-worth individuals who expect a higher standard in every interaction they have with your brand.</p></div>
+          <div class="philosophy-block"><h4>We Think in Systems, Always</h4><p>Every engagement begins with infrastructure. We build growth systems that operate continuously, generating compounding returns that become more powerful and efficient with each passing quarter.</p></div>
+          <div class="philosophy-block"><h4>Discretion Is a Professional Standard</h4><p>Our clients are often highly visible brands. We operate with complete discretion, protecting both your competitive strategy and the privacy of your client relationships at every stage of our work together.</p></div>
+          <div class="philosophy-block"><h4>Results Are the Only Metric That Matters</h4><p>We measure our success by one standard: your revenue growth. Every engagement is structured around clear performance objectives, and we hold ourselves fully accountable to every one of them.</p></div>
+        </div>
+      </div>
+      <div class="about-right fade-up fade-delay-2">
+        <p class="about-quote">"The most sophisticated brands in the world deserve the most sophisticated growth partner — one that understands that <span>growth and prestige are entirely aligned.</span>"</p>
+        <div class="about-founder">
+          <div class="founder-avatar">L</div>
+          <div>
+            <div class="founder-name">Leadership Team, Luxora Digital</div>
+            <div class="founder-title">Luxury Brand Growth Consultants</div>
+          </div>
+        </div>
+        <div class="differentiators">
+          <div class="diff-item"><h5>Luxury Exclusive</h5><p>We work exclusively with luxury and premium brands. This focus means our methodologies are purpose-built for your market and your clientele.</p></div>
+          <div class="diff-item"><h5>Senior Attention</h5><p>You work directly with senior strategists on every engagement. Your growth is owned and driven at the highest level of our firm.</p></div>
+          <div class="diff-item"><h5>Selective Partnership</h5><p>We maintain a curated client portfolio to ensure exceptional attention, focus, and measurable results for every brand we serve.</p></div>
+          <div class="diff-item"><h5>USA Focused</h5><p>Deep expertise in the U.S. luxury market, its consumers, channels, competitive dynamics, and the regulatory landscape that shapes it.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-band">
+  <div class="section-inner">
+    <span class="label">Begin Your Growth Journey</span>
+    <h2>Is Your Brand<br>Ready to <em>Dominate</em>?</h2>
+    <p>A private strategy consultation with our senior team begins with a 60-minute analysis of your brand's current position, growth opportunities, and the highest-leverage paths forward.</p>
+    <a href="#contact" class="btn-primary">Schedule a Private Strategy Consultation</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-left fade-up">
+        <span class="label">Private Consultation</span>
+        <h2>Begin the Conversation</h2>
+        <p>Complete the form to request your private strategy consultation. We review all inquiries personally and respond within one business day to qualified luxury brands ready to grow.</p>
+        <div class="contact-info">
+          <div class="contact-info-item"><div class="contact-info-label">Headquarters</div><div class="contact-info-val">New York, New York, USA</div></div>
+          <div class="contact-info-item"><div class="contact-info-label">Serving</div><div class="contact-info-val">Luxury Brands Across the United States</div></div>
+          <div class="contact-info-item"><div class="contact-info-label">Engagement</div><div class="contact-info-val">By Invitation and Application</div></div>
+          <div class="contact-info-item"><div class="contact-info-label">Response Time</div><div class="contact-info-val">Within One Business Day</div></div>
+        </div>
+      </div>
+      <div class="contact-right fade-up fade-delay-2">
+        <div id="contact-form-wrap">
+          <form class="luxury-form" id="consultation-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group"><label for="fname">Full Name</label><input type="text" id="fname" placeholder="Alexandra Whitmore" required></div>
+              <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="a.whitmore@brand.com" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" placeholder="Your Brand" required></div>
+              <div class="form-group"><label for="website">Website</label><input type="url" id="website" placeholder="https://yourbrand.com"></div>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry" required>
+                <option value="" disabled selected>Select Your Industry</option>
+                <option>Luxury Fashion and Apparel</option>
+                <option>Fine Hospitality and Travel</option>
+                <option>Luxury Real Estate</option>
+                <option>Fine Dining and Culinary</option>
+                <option>Private Healthcare and Aesthetics</option>
+                <option>Prestige Beauty and Wellness</option>
+                <option>Luxury Automotive</option>
+                <option>High-End Lifestyle Brand</option>
+                <option>Other Luxury or Premium Brand</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Estimated Monthly Marketing Investment</label>
+              <select id="budget" required>
+                <option value="" disabled selected>Select Investment Range</option>
+                <option>$5,000 to $15,000 per month</option>
+                <option>$15,000 to $30,000 per month</option>
+                <option>$30,000 to $75,000 per month</option>
+                <option>$75,000 to $150,000 per month</option>
+                <option>$150,000 and above per month</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="objective">Primary Growth Objective</label>
+              <textarea id="objective" placeholder="Describe your primary growth challenge or objective. What would a transformative outcome look like for your brand?"></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">Schedule a Private Strategy Consultation</button>
+            </div>
+            <p class="form-note">All inquiries are held in strict confidence. We review every submission personally.</p>
+          </form>
+        </div>
+        <div class="form-success" id="form-success">
+          <h3>Consultation Requested</h3>
+          <p>Thank you for reaching out. A senior member of our team will review your inquiry and be in contact within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="section-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">LUXO<span>R</span>A</a>
+        <p>The premier luxury brand growth consultancy for high-end brands across the United States. We design full-spectrum digital growth ecosystems that generate predictable revenue while honoring the prestige you have built.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="#services">Brand Positioning</a></li><li><a href="#services">Customer Acquisition</a></li><li><a href="#services">Conversion Architecture</a></li><li><a href="#services">Luxury Web Experiences</a></li><li><a href="#services">Marketing Automation</a></li><li><a href="#services">Market Expansion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Luxora</a></li><li><a href="#framework">Our Framework</a></li><li><a href="#cases">Case Studies</a></li><li><a href="#engagement">Engagement Models</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Sectors</h5>
+        <ul class="footer-links">
+          <li><a href="#industries">Luxury Fashion</a></li><li><a href="#industries">Fine Hospitality</a></li><li><a href="#industries">Luxury Real Estate</a></li><li><a href="#industries">Fine Dining</a></li><li><a href="#industries">Private Healthcare</a></li><li><a href="#industries">Prestige Beauty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Luxora Digital Marketing. All Rights Reserved. United States.</p>
+      <ul class="footer-legal"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Confidentiality</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>60));
+const obs=new IntersectionObserver(entries=>{entries.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+function handleSubmit(e){e.preventDefault();document.getElementById('contact-form-wrap').style.display='none';document.getElementById('form-success').style.display='block'}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+</script>
+</body>
+</html>
